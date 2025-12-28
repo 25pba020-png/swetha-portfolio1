@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swetha Thanigaivelu | Professional Portfolio</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI',sans-serif;
+}
+
+body{
+  background:linear-gradient(-45deg,#667eea,#764ba2,#f7971e,#43cea2);
+  background-size:400% 400%;
+  animation:bgMove 15s ease infinite;
+  color:#333;
+}
+
+@keyframes bgMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* HEADER */
+header{
+  text-align:center;
+  padding:120px 20px;
+  color:white;
+}
+
+header h1{
+  font-size:48px;
+  animation:fadeDown 1.2s ease;
+}
+
+header p{
+  font-size:20px;
+  margin-top:10px;
+  animation:fadeUp 1.5s ease;
+}
+
+@keyframes fadeDown{
+  from{opacity:0; transform:translateY(-40px)}
+  to{opacity:1; transform:translateY(0)}
+}
+@keyframes fadeUp{
+  from{opacity:0; transform:translateY(40px)}
+  to{opacity:1; transform:translateY(0)}
+}
+
+/* NAV */
+nav{
+  position:sticky;
+  top:0;
+  background:white;
+  padding:15px;
+  text-align:center;
+  box-shadow:0 8px 20px rgba(0,0,0,0.1);
+  z-index:100;
+}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:600;
+  color:#4f46e5;
+  position:relative;
+}
+
+nav a::after{
+  content:'';
+  position:absolute;
+  width:0;
+  height:3px;
+  background:#f59e0b;
+  left:0;
+  bottom:-6px;
+  transition:0.3s;
+}
+
+nav a:hover::after{
+  width:100%;
+}
+
+/* SECTIONS */
+section{
+  max-width:1100px;
+  margin:70px auto;
+  background:white;
+  padding:55px;
+  border-radius:22px;
+  box-shadow:0 25px 45px rgba(0,0,0,0.15);
+  opacity:0;
+  transform:translateY(60px);
+  transition:1s;
+}
+
+section.show{
+  opacity:1;
+  transform:translateY(0);
+}
+
+section h2{
+  font-size:32px;
+  color:#4f46e5;
+  border-bottom:4px solid #f59e0b;
+  display:inline-block;
+  margin-bottom:30px;
+}
+
+/* GRID + CARDS */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:#f9fafb;
+  padding:25px;
+  border-radius:16px;
+  border-top:6px solid #4f46e5;
+  transform:translateY(30px);
+  opacity:0;
+  transition:0.6s ease;
+}
+
+.card.show{
+  transform:translateY(0);
+  opacity:1;
+}
+
+.card:hover{
+  transform:translateY(-10px) scale(1.02);
+  box-shadow:0 18px 35px rgba(0,0,0,0.18);
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:35px;
+  color:white;
+  margin-top:80px;
+}
+
+@media(max-width:600px){
+  header h1{font-size:36px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Swetha Thanigaivelu</h1>
+<p>MBA Student | Finance & Marketing | Business Communication & Strategy</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
+<a href="#education">Education</a>
+<a href="#certifications">Certifications</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+I am an MBA student specializing in Finance and Marketing at Avinashilingam University.
+I bring a calm, structured, and thoughtful approach to work, blending analytical reasoning
+with strong communication and creative clarity.
+</p>
+</section>
+
+<section id="skills">
+<h2>Skills & Expertise</h2>
+<div class="grid">
+<div class="card">Financial reasoning & analysis</div>
+<div class="card">Market understanding & strategy</div>
+<div class="card">Business communication</div>
+<div class="card">MS Excel (with AI)</div>
+<div class="card">Google Workspace</div>
+<div class="card">HubSpot CRM (Basics)</div>
+<div class="card">Apollo.io & Tally Prime</div>
+<div class="card">Content writing & Canva design</div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Professional Experience</h2>
+<div class="grid">
+<div class="card">Freelance Content Writer</div>
+<div class="card">Author Relationship Manager – The Creative Circle</div>
+<div class="card">Lead Generation Specialist – Codingmart Technologies</div>
+<div class="card">Audit Intern – Kabila Devi Audit Firm</div>
+</div>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<ul>
+<li><strong>MBA – Finance & Marketing</strong>, Avinashilingam University (2025–2027)</li>
+<li><strong>B.Com – General</strong>, KPR College (2022–2025)</li>
+</ul>
+</section>
+
+<section id="certifications">
+<h2>Certifications</h2>
+<ul>
+<li>Excel with AI</li>
+<li>Fundamentals of Digital Marketing – Google</li>
+<li>Generative AI – LinkedIn Learning</li>
+<li>Data Analytics Virtual Internship – Accenture</li>
+<li>Business Communication – HP Life</li>
+<li>Soft Skills & Personality – NPTEL</li>
+</ul>
+</section>
+
+<section id="portfolio">
+<h2>Portfolio</h2>
+<p>
+Content writing samples, social media creatives,
+academic projects, and research work.
+</p>
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Email: swethathanigaivelu@gmail.com</p>
+<p>Phone: 9345325665</p>
+<p>Location: Coimbatore, Tamil Nadu</p>
+<p>LinkedIn: linkedin.com/in/swetha-thanigaivelu</p>
+</section>
+
+<footer>
+© 2025 Swetha Thanigaivelu | Professional Portfolio
+</footer>
+
+<script>
+const sections=document.querySelectorAll("section");
+const cards=document.querySelectorAll(".card");
+
+const observer=new IntersectionObserver(entries=>{
+  entries.forEach(entry=>{
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+},{threshold:0.2});
+
+sections.forEach(sec=>observer.observe(sec));
+cards.forEach(card=>observer.observe(card));
+</script>
+
+</body>
+</html>
